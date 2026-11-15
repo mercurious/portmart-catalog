@@ -1,7 +1,64 @@
 {
   "version": 1,
-  "generated": "2026-11-15T21:05:19Z",
+  "generated": "2026-11-15T21:48:58Z",
   "apps": [
+    {
+      "id": "2048",
+      "name": "2048",
+      "short": "2048",
+      "author": "Gabriele Cirulli",
+      "category": "play",
+      "tags": [
+        "online"
+      ],
+      "blurb": "The number-merging puzzle; the D-pad slides the tiles. Opens play2048.co in full-screen Firefox. The site shows ads.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://play2048.co/",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "web",
+            "url": "https://play2048.co/"
+          },
+          "size_mb": 0,
+          "launchers": [
+            {
+              "name": "2048"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "after a few D-pad moves, cropped to the board, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
     {
       "id": "autobrawl",
       "name": "Autobrawl",
@@ -182,6 +239,136 @@
       }
     },
     {
+      "id": "chrome-music-lab",
+      "name": "Chrome Music Lab",
+      "short": "Music Lab",
+      "monogram": "CML",
+      "author": "Google Creative Lab",
+      "category": "studio",
+      "tags": [
+        "touch",
+        "online"
+      ],
+      "blurb": "Fourteen touch music toys: song maker, rhythm, spectrogram, chords, arpeggios. Opens in full-screen Firefox.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://musiclab.chromeexperiments.com/",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "web",
+            "url": "https://musiclab.chromeexperiments.com/"
+          },
+          "size_mb": 0,
+          "launchers": [
+            {
+              "name": "Chrome Music Lab"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "the experiments, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          },
+          {
+            "file": "shot-2.png",
+            "caption": "Rhythm, opened by touch, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six",
+          "shot-2.png",
+          "shot-2.poster.dense.six",
+          "shot-2.poster.large.six",
+          "shot-2.shot.dense.six",
+          "shot-2.shot.large.six",
+          "shot-2.shotS.dense.six",
+          "shot-2.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "short": "Excalidraw",
+      "monogram": "EX",
+      "author": "Excalidraw",
+      "category": "studio",
+      "tags": [
+        "touch",
+        "online"
+      ],
+      "blurb": "Hand-drawn style whiteboard: pick a tool and draw with your finger. Opens excalidraw.com in full-screen Firefox.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://excalidraw.com/",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "web",
+            "url": "https://excalidraw.com/"
+          },
+          "size_mb": 0,
+          "launchers": [
+            {
+              "name": "Excalidraw"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "pencil strokes drawn by touch, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
       "id": "fliptribe",
       "name": "fliptribe",
       "short": "fliptribe",
@@ -233,6 +420,71 @@
           "icon.png"
         ]
       }
+    },
+    {
+      "id": "grout",
+      "name": "Grout",
+      "short": "Grout",
+      "monogram": "GR",
+      "author": "rommapp",
+      "category": "net",
+      "tags": [
+        "lan",
+        "account",
+        "online"
+      ],
+      "blurb": "RomM client: browse your RomM server's library, download games and sync saves from the handheld. Needs a RomM server on your network.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": true,
+      "homepage": "https://grout.romm.app",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "rommapp/grout",
+            "asset": "Grout-ROCKNIX.zip"
+          },
+          "size_mb": 23.7,
+          "home": "grout",
+          "launchers": [
+            {
+              "name": "Grout",
+              "exec": "Grout.sh",
+              "args": ""
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "first-run language picker, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      },
+      "description": "On launch Grout adds or updates its own entry in the Ports gamelist.xml (it assumes it lives in roms/ports); portmart merges that entry with its own on install and removes both on remove. It updates itself."
     },
     {
       "id": "rap-machine",
@@ -471,13 +723,102 @@
       "media": {
         "icon": "icon.png",
         "icon_generated": true,
-        "screens": [],
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "start page, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
         "files": [
           "icon.iconM.dense.six",
           "icon.iconM.large.six",
           "icon.iconS.dense.six",
           "icon.iconS.large.six",
-          "icon.png"
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "tic-80",
+      "name": "TIC-80",
+      "short": "TIC-80",
+      "monogram": "T80",
+      "author": "nesbox",
+      "category": "play",
+      "tags": [
+        "online"
+      ],
+      "blurb": "Fantasy console. Opens in its cartridge browser: the D-pad picks a cart. The tic80.com carts need Wi-Fi; making carts needs a keyboard.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://tic80.com",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "nesbox/tic-80",
+            "asset_pattern": "tic80-v*-linux-arm64.zip"
+          },
+          "size_mb": 4.9,
+          "home": "tic-80",
+          "launchers": [
+            {
+              "name": "TIC-80",
+              "exec": "tic80",
+              "args": "--fullscreen --cmd=surf"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "cartridge browser with TIC-80's demo carts, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          },
+          {
+            "file": "shot-2.png",
+            "caption": "cartridge browser on first start, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six",
+          "shot-2.png",
+          "shot-2.poster.dense.six",
+          "shot-2.poster.large.six",
+          "shot-2.shot.dense.six",
+          "shot-2.shot.large.six",
+          "shot-2.shotS.dense.six",
+          "shot-2.shotS.large.six"
         ]
       }
     },
@@ -539,12 +880,70 @@
           "shot-1.shotS.large.six"
         ]
       }
+    },
+    {
+      "id": "webamp",
+      "name": "Webamp",
+      "short": "Webamp",
+      "monogram": "WA",
+      "author": "Jordan Eldredge",
+      "category": "media",
+      "tags": [
+        "online"
+      ],
+      "blurb": "Winamp 2 rebuilt for the browser: skins, equalizer, playlist and the Milkdrop visualizer, played by touch. Opens webamp.org in full-screen Firefox.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://webamp.org/",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "web",
+            "url": "https://webamp.org/"
+          },
+          "size_mb": 0,
+          "launchers": [
+            {
+              "name": "Webamp"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "playing the demo playlist with Milkdrop, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
     }
   ],
   "portmart": {
-    "version": "0.1.0",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.0/portmart-aarch64.tar.gz",
-    "sha256": "c94e72cb6d56a35cdc06b6d2b1d5653a6d0be3c949bfb981d6c2d9d0ed05ca78",
-    "size": 7024155
+    "version": "0.1.1",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.1/portmart-aarch64.tar.gz",
+    "sha256": "95191485950a75fa924f85a91b38919b931bbabfb758264325d8b5c0af16c27d",
+    "size": 13553153
   }
 }
