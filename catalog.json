@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-15T21:01:35Z",
+  "generated": "2026-11-15T21:05:19Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -40,53 +40,14 @@
       },
       "media": {
         "icon": "icon.png",
-        "icon_generated": false,
-        "screens": [
-          {
-            "file": "shot-1.png",
-            "caption": "highway chase",
-            "prototype": false
-          },
-          {
-            "file": "shot-2.png",
-            "caption": "cockpit",
-            "prototype": false
-          },
-          {
-            "file": "shot-3.png",
-            "caption": "garage",
-            "prototype": false
-          }
-        ],
+        "icon_generated": true,
+        "screens": [],
         "files": [
           "icon.iconM.dense.six",
           "icon.iconM.large.six",
           "icon.iconS.dense.six",
           "icon.iconS.large.six",
-          "icon.png",
-          "shot-1.hero.dense.six",
-          "shot-1.hero.large.six",
-          "shot-1.png",
-          "shot-1.poster.dense.six",
-          "shot-1.poster.large.six",
-          "shot-1.shot.dense.six",
-          "shot-1.shot.large.six",
-          "shot-1.shotS.dense.six",
-          "shot-1.shotS.large.six",
-          "shot-2.png",
-          "shot-2.poster.dense.six",
-          "shot-2.poster.large.six",
-          "shot-2.shot.dense.six",
-          "shot-2.shot.large.six",
-          "shot-2.shotS.dense.six",
-          "shot-2.shotS.large.six",
-          "shot-3.png",
-          "shot-3.poster.dense.six",
-          "shot-3.poster.large.six",
-          "shot-3.shot.dense.six",
-          "shot-3.shot.large.six",
-          "shot-3.shotS.dense.six",
-          "shot-3.shotS.large.six"
+          "icon.png"
         ]
       }
     },
@@ -262,29 +223,14 @@
       },
       "media": {
         "icon": "icon.png",
-        "icon_generated": false,
-        "screens": [
-          {
-            "file": "shot-1.png",
-            "caption": "Electribe EA-1 recreation",
-            "prototype": false
-          }
-        ],
+        "icon_generated": true,
+        "screens": [],
         "files": [
           "icon.iconM.dense.six",
           "icon.iconM.large.six",
           "icon.iconS.dense.six",
           "icon.iconS.large.six",
-          "icon.png",
-          "shot-1.hero.dense.six",
-          "shot-1.hero.large.six",
-          "shot-1.png",
-          "shot-1.poster.dense.six",
-          "shot-1.poster.large.six",
-          "shot-1.shot.dense.six",
-          "shot-1.shot.large.six",
-          "shot-1.shotS.dense.six",
-          "shot-1.shotS.large.six"
+          "icon.png"
         ]
       }
     },
@@ -598,7 +544,7 @@
   "portmart": {
     "version": "0.1.0",
     "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.0/portmart-aarch64.tar.gz",
-    "sha256": "84dfce6a139394e938bc6fedb6e9308d42538002bbdf6101ea68e02765ef25dd",
-    "size": 12020420
+    "sha256": "c94e72cb6d56a35cdc06b6d2b1d5653a6d0be3c949bfb981d6c2d9d0ed05ca78",
+    "size": 7024155
   }
 }
