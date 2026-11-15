@@ -1,0 +1,604 @@
+{
+  "version": 1,
+  "generated": "2026-11-15T21:01:35Z",
+  "apps": [
+    {
+      "id": "autobrawl",
+      "name": "Autobrawl",
+      "short": "Autobrawl",
+      "author": "mercurious",
+      "category": "play",
+      "tags": [
+        "gpu"
+      ],
+      "blurb": "1990s vehicular combat, a homage to Autoduel (1985), built with Godot Engine.",
+      "community": false,
+      "private": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "unpublished"
+          },
+          "size_mb": 68.6,
+          "home": "autobrawl",
+          "launchers": [
+            {
+              "name": "Autobrawl",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "resolved": {
+            "status": "unavailable",
+            "reason": "not publicly released"
+          }
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "highway chase",
+            "prototype": false
+          },
+          {
+            "file": "shot-2.png",
+            "caption": "cockpit",
+            "prototype": false
+          },
+          {
+            "file": "shot-3.png",
+            "caption": "garage",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six",
+          "shot-2.png",
+          "shot-2.poster.dense.six",
+          "shot-2.poster.large.six",
+          "shot-2.shot.dense.six",
+          "shot-2.shot.large.six",
+          "shot-2.shotS.dense.six",
+          "shot-2.shotS.large.six",
+          "shot-3.png",
+          "shot-3.poster.dense.six",
+          "shot-3.poster.large.six",
+          "shot-3.shot.dense.six",
+          "shot-3.shot.large.six",
+          "shot-3.shotS.dense.six",
+          "shot-3.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "autogamer",
+      "name": "Autogamer",
+      "short": "Autogamer",
+      "monogram": "AG",
+      "author": "mercurious",
+      "category": "play",
+      "tags": [
+        "ai",
+        "roms",
+        "charger",
+        "size",
+        "ram12"
+      ],
+      "blurb": "A local language model plays retro games while you watch. Slow motion at a level you choose. Bring your own ROMs.",
+      "description": "Tetris, tennis, motocross, boxing, Contra, Streets of Rage 2 and NES Pickleball, played by a model running on the handheld. Slow motion at a level you choose; at Expert the model falls behind. Bring your own ROMs.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/autogamer",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/autogamer",
+            "asset": "autogamer-aarch64.tar.gz"
+          },
+          "size_mb": 9.4,
+          "extra_mb": 6200,
+          "home": "autogamer",
+          "strip_components": 1,
+          "launchers": [
+            {
+              "name": "Autogamer",
+              "exec": "app/autogamer.sh",
+              "args": ""
+            }
+          ],
+          "launchers_from_hook": true,
+          "hook": "install.sh",
+          "hook_env": {
+            "AG_PORTS": "{PORTS_DIR}"
+          },
+          "version_file": "VERSION"
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "Tetris, prototype capture",
+            "prototype": true
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "autojam",
+      "name": "Autojam",
+      "short": "Autojam",
+      "monogram": "AJ",
+      "author": "mercurious",
+      "category": "studio",
+      "tags": [
+        "ai",
+        "mic",
+        "size"
+      ],
+      "blurb": "Gemma sits in with your jam. It listens through the mic, works out key, chord, tempo and energy, and a synth band improvises along.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/autojam",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/autojam",
+            "asset": "autojam-aarch64.tar.gz"
+          },
+          "size_mb": 17.5,
+          "home": "autojam",
+          "launchers": [
+            {
+              "name": "Autojam",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "version_file": "VERSION",
+          "keep": [
+            "data",
+            "logs"
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png"
+        ]
+      }
+    },
+    {
+      "id": "fliptribe",
+      "name": "fliptribe",
+      "short": "fliptribe",
+      "author": "mercurious",
+      "category": "studio",
+      "tags": [
+        "touch"
+      ],
+      "blurb": "A Korg Electribe EA-1 recreation: a pattern-based groove box built for the Flip 2's screen and pads. Patterns are kept across updates.",
+      "community": false,
+      "private": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "unpublished"
+          },
+          "size_mb": 1.3,
+          "home": "fliptribe",
+          "launchers": [
+            {
+              "name": "fliptribe",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "keep": [
+            "data",
+            "logs"
+          ],
+          "resolved": {
+            "status": "unavailable",
+            "reason": "not publicly released"
+          }
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "Electribe EA-1 recreation",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "rap-machine",
+      "name": "Underground Rap Machine",
+      "short": "URM",
+      "author": "mercurious",
+      "category": "studio",
+      "tags": [
+        "mic"
+      ],
+      "blurb": "Beats and a mic-fed auto-tune in one page, run full screen in Firefox.",
+      "community": false,
+      "family": "rap-machine",
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/ug-rap-machine",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/ug-rap-machine",
+            "asset": "rap-machine-aarch64.tar.gz"
+          },
+          "size_mb": 1.4,
+          "home": "rap-machine",
+          "needs_firefox": true,
+          "launchers": [
+            {
+              "name": "Rap Machine",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "keep": [
+            "logs"
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "headless browser render",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "rap-machine-gemma",
+      "name": "Underground Rap Machine",
+      "short": "URM Gemma",
+      "author": "mercurious",
+      "category": "studio",
+      "tags": [
+        "mic",
+        "ai"
+      ],
+      "blurb": "The same rap machine with a Gemma MC. The model plays the machine while Pocket TTS sings its lyrics.",
+      "community": false,
+      "family": "rap-machine",
+      "variant_label": "+ Gemma",
+      "kind": "app",
+      "depends": [
+        "retro-voice-chat"
+      ],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/ug-rap-machine",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/ug-rap-machine",
+            "asset": "rap-machine-aarch64.tar.gz"
+          },
+          "size_mb": 1.4,
+          "home": "rap-machine",
+          "needs_firefox": true,
+          "launchers": [
+            {
+              "name": "Rap Machine + Gemma",
+              "exec": "launch.sh",
+              "args": "",
+              "env": {
+                "URM_AI": "1"
+              }
+            }
+          ],
+          "hook": "install.sh",
+          "keep": [
+            "logs"
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png"
+        ]
+      }
+    },
+    {
+      "id": "retro-voice-chat",
+      "name": "Retro Voice Chat",
+      "short": "Retro VC",
+      "monogram": "RV",
+      "author": "mercurious",
+      "category": "chat",
+      "tags": [
+        "ai",
+        "mic",
+        "charger",
+        "size",
+        "ram8"
+      ],
+      "blurb": "Hold a button, talk, and it answers out loud. Chat, retro trivia, word puzzles and Zork, with no cloud and no account.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/retro-voice-chat",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/retro-voice-chat",
+            "asset": "retro-voice-chat-aarch64.tar.gz"
+          },
+          "size_mb": 10.0,
+          "extra_mb": 9200,
+          "home": "retro-voice-chat",
+          "strip_components": 1,
+          "launchers": [
+            {
+              "name": "Retro Voice Chat",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "launchers_from_hook": true,
+          "hook": "install.sh",
+          "hook_env": {
+            "RV_PORTS": "{PORTS_DIR}"
+          },
+          "version_file": "VERSION"
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "pixel-art UI, prototype capture",
+            "prototype": true
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    },
+    {
+      "id": "retsurf",
+      "name": "retsurf",
+      "short": "retsurf",
+      "monogram": "RS",
+      "author": "mxmgorin",
+      "category": "net",
+      "tags": [
+        "online"
+      ],
+      "blurb": "Web browser focused on gamepad and keyboard controls, built with Servo and SDL2. Community app, installed from its GitHub release.",
+      "community": true,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://retsurf.app",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mxmgorin/retsurf",
+            "asset": "retsurf-linux-aarch64.zip"
+          },
+          "size_mb": 47.1,
+          "home": "retsurf",
+          "launchers": [
+            {
+              "name": "retsurf",
+              "exec": "retsurf-linux-aarch64",
+              "args": ""
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png"
+        ]
+      }
+    },
+    {
+      "id": "voxel-gt",
+      "name": "Voxel GT",
+      "short": "Voxel GT",
+      "author": "mercurious",
+      "category": "play",
+      "tags": [
+        "gpu",
+        "online"
+      ],
+      "blurb": "Voxel touring-car racing in full-screen Firefox: five road cars, three real circuits. Served from GitHub Pages, with the pad mapped.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://mercurious.github.io/voxel-gt-opus/",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "web",
+            "url": "https://mercurious.github.io/voxel-gt-opus/",
+            "controller": "voxel-gt.yaml"
+          },
+          "size_mb": 0,
+          "launchers": [
+            {
+              "name": "Voxel GT"
+            }
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "title screen, headless render",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
+    }
+  ],
+  "portmart": {
+    "version": "0.1.0",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.0/portmart-aarch64.tar.gz",
+    "sha256": "84dfce6a139394e938bc6fedb6e9308d42538002bbdf6101ea68e02765ef25dd",
+    "size": 12020420
+  }
+}
