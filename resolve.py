@@ -53,13 +53,21 @@ def get(url, accept=None, auth=False):
 
 
 def resolve(src):
+    """A `prerelease: true` source takes the most recently published release, prerelease or not
+    (CONTRACT R10); every other source takes GitHub's latest stable release."""
     repo = src["repo"]
-    code, body = get(f"{API}/repos/{repo}/releases/latest", "application/vnd.github+json", auth=True)
+    path = "releases?per_page=30" if src.get("prerelease") is True else "releases/latest"
+    code, body = get(f"{API}/repos/{repo}/{path}", "application/vnd.github+json", auth=True)
     if code == 404:
         return {"status": "unavailable", "reason": f"no published release of {repo} (or the repository is private)"}
     if code != 200:
         raise Transient(f"HTTP {code} for {repo}")
     rel = json.loads(body)
+    if isinstance(rel, list):
+        rels = [r for r in rel if not r.get("draft")]
+        if not rels:
+            return {"status": "unavailable", "reason": f"no published release of {repo}"}
+        rel = max(rels, key=lambda r: r.get("published_at") or "")
     tag = rel.get("tag_name") or ""
     assets = {a["name"]: a for a in rel.get("assets", [])}
     if src.get("asset_pattern"):
@@ -85,7 +93,7 @@ def resolve(src):
         return {"status": "unavailable", "reason": "release has no checksum"}
     version = tag[1:] if re.match(r"^[vV][0-9]", tag) else tag
     return {"status": "ok", "version": version, "tag": tag, "asset": name, "url": url,
-            "sha256": sha, "size": assets[name].get("size")}
+            "sha256": sha, "size": assets[name].get("size"), "prerelease": rel.get("prerelease") is True}
 
 
 def previous_blocks(url):
