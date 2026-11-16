@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-16T03:25:21Z",
+  "generated": "2026-11-16T03:29:12Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -1061,9 +1061,9 @@
     }
   ],
   "portmart": {
-    "version": "0.1.3",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.3/portmart-aarch64.tar.gz",
-    "sha256": "96d6315d2282435d71e3a6af6497d64a0dd008a9f344ac09ea4be7d0256b5c19",
-    "size": 16586846
+    "version": "0.1.4",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.4/portmart-aarch64.tar.gz",
+    "sha256": "fbe54edcbf54f4b1f7d06ef5acca9a719c4f984b82383c91059ab8e79e55dd30",
+    "size": 18436850
   }
 }
