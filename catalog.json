@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-16T00:46:37Z",
+  "generated": "2026-11-16T01:17:28Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -518,6 +518,76 @@
       "description": "On launch Grout adds or updates its own entry in the Ports gamelist.xml (it assumes it lives in roms/ports); portmart merges that entry with its own on install and removes both on remove. It updates itself."
     },
     {
+      "id": "nes-pickleball",
+      "name": "Pickleball",
+      "short": "Pickleball",
+      "author": "mercurious",
+      "category": "play",
+      "tags": [
+        "coop"
+      ],
+      "blurb": "Homebrew NES cartridge: pickleball by the 1984 rules, as Nintendo could have shipped it in 1985. Singles and doubles, 1 or 2 players, five levels, an exhibition to watch.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/nes-pickleball",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/nes-pickleball",
+            "asset": "pickleball.nes"
+          },
+          "size_mb": 0.3,
+          "rom": {
+            "system": "nes",
+            "file": "Pickleball.nes"
+          }
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "exhibition doubles: the server calls 5-0-2",
+            "prototype": false
+          },
+          {
+            "file": "shot-2.png",
+            "caption": "the box",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six",
+          "shot-2.png",
+          "shot-2.poster.dense.six",
+          "shot-2.poster.large.six",
+          "shot-2.shot.dense.six",
+          "shot-2.shot.large.six",
+          "shot-2.shotS.dense.six",
+          "shot-2.shotS.large.six"
+        ]
+      },
+      "description": "An original NES game (MMC3, cc65), in the mould of NES Tennis: side-out scoring to 11, the two-bounce rule, the kitchen, underhand serves. The server calls the score; the umpire calls faults. Two players team up in doubles. It goes in the NES list, not Ports, and plays in RetroArch like any NES game; saves stay when you update or remove it."
+    },
+    {
       "id": "rap-machine",
       "name": "Underground Rap Machine",
       "short": "URM",
@@ -977,9 +1047,9 @@
     }
   ],
   "portmart": {
-    "version": "0.1.2",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.2/portmart-aarch64.tar.gz",
-    "sha256": "5e3bafa9e5a5853e240f700451b0bdb3202742d7057309c675dea66ca22e92e1",
-    "size": 15763244
+    "version": "0.1.3",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.3/portmart-aarch64.tar.gz",
+    "sha256": "96d6315d2282435d71e3a6af6497d64a0dd008a9f344ac09ea4be7d0256b5c19",
+    "size": 16586846
   }
 }
