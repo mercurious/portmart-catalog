@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-15T21:52:34Z",
+  "generated": "2026-11-16T00:20:00Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -192,10 +192,12 @@
         "touch",
         "online"
       ],
-      "blurb": "Fourteen touch music toys: song maker, rhythm, spectrogram, chords, arpeggios. Opens in full-screen Firefox.",
+      "blurb": "Fourteen touch music toys: song maker, rhythm, spectrogram, chords, arpeggios. Opens full screen in Donkey.",
       "community": true,
       "kind": "app",
-      "depends": [],
+      "depends": [
+        "donkey"
+      ],
       "self_updates": false,
       "homepage": "https://musiclab.chromeexperiments.com/",
       "platforms": {
@@ -253,6 +255,90 @@
       }
     },
     {
+      "id": "donkey",
+      "name": "Donkey",
+      "short": "Donkey",
+      "monogram": "DK",
+      "author": "mercurious",
+      "category": "net",
+      "tags": [
+        "touch",
+        "online"
+      ],
+      "blurb": "The Firefox web browser for your handheld: a toolbar you can read, a keyboard you type on with the D-pad, and the browser that web apps here open in.",
+      "description": "Downloads Mozilla's own Firefox for Linux aarch64 at install and runs it unmodified. The on-screen keyboard opens by itself on any text field. Start goes to the address bar, L1/R1 switch tabs, L3/R3 zoom, Home exits. Donkey is not affiliated with Mozilla; Firefox is a trademark of the Mozilla Foundation.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/donkey",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/donkey",
+            "asset": "donkey-aarch64.tar.gz"
+          },
+          "size_mb": 0.2,
+          "extra_mb": 360,
+          "home": "donkey",
+          "strip_components": 1,
+          "version_file": "VERSION",
+          "launchers": [
+            {
+              "name": "Donkey",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "keep": [
+            "firefox",
+            "logs"
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "browsing at handheld scale, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          },
+          {
+            "file": "shot-2.png",
+            "caption": "the keyboard up for the address bar, ring on J, device capture",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six",
+          "shot-2.png",
+          "shot-2.poster.dense.six",
+          "shot-2.poster.large.six",
+          "shot-2.shot.dense.six",
+          "shot-2.shot.large.six",
+          "shot-2.shotS.dense.six",
+          "shot-2.shotS.large.six"
+        ]
+      }
+    },
+    {
       "id": "excalidraw",
       "name": "Excalidraw",
       "short": "Excalidraw",
@@ -263,10 +349,12 @@
         "touch",
         "online"
       ],
-      "blurb": "Hand-drawn style whiteboard: pick a tool and draw with your finger. Opens excalidraw.com in full-screen Firefox.",
+      "blurb": "Hand-drawn style whiteboard: pick a tool and draw with your finger. Opens excalidraw.com full screen in Donkey.",
       "community": true,
       "kind": "app",
-      "depends": [],
+      "depends": [
+        "donkey"
+      ],
       "self_updates": false,
       "homepage": "https://excalidraw.com/",
       "platforms": {
@@ -438,11 +526,13 @@
       "tags": [
         "mic"
       ],
-      "blurb": "Beats and a mic-fed auto-tune in one page, run full screen in Firefox.",
+      "blurb": "Beats and a mic-fed auto-tune in one page, run full screen in Donkey.",
       "community": false,
       "family": "rap-machine",
       "kind": "app",
-      "depends": [],
+      "depends": [
+        "donkey"
+      ],
       "self_updates": false,
       "homepage": "https://github.com/mercurious/ug-rap-machine",
       "platforms": {
@@ -454,7 +544,6 @@
           },
           "size_mb": 1.4,
           "home": "rap-machine",
-          "needs_firefox": true,
           "launchers": [
             {
               "name": "Rap Machine",
@@ -512,7 +601,8 @@
       "variant_label": "+ Gemma",
       "kind": "app",
       "depends": [
-        "retro-voice-chat"
+        "retro-voice-chat",
+        "donkey"
       ],
       "self_updates": false,
       "homepage": "https://github.com/mercurious/ug-rap-machine",
@@ -525,7 +615,6 @@
           },
           "size_mb": 1.4,
           "home": "rap-machine",
-          "needs_firefox": true,
           "launchers": [
             {
               "name": "Rap Machine + Gemma",
@@ -775,10 +864,12 @@
         "gpu",
         "online"
       ],
-      "blurb": "Voxel touring-car racing in full-screen Firefox: five road cars, three real circuits. Served from GitHub Pages, with the pad mapped.",
+      "blurb": "Voxel touring-car racing, full screen in Donkey: five road cars, three real circuits. Served from GitHub Pages, with the pad mapped.",
       "community": false,
       "kind": "app",
-      "depends": [],
+      "depends": [
+        "donkey"
+      ],
       "self_updates": false,
       "homepage": "https://mercurious.github.io/voxel-gt-opus/",
       "platforms": {
@@ -786,7 +877,7 @@
           "source": {
             "type": "web",
             "url": "https://mercurious.github.io/voxel-gt-opus/",
-            "controller": "voxel-gt.yaml"
+            "controller": "gamepad.yaml"
           },
           "size_mb": 0,
           "launchers": [
@@ -834,10 +925,12 @@
       "tags": [
         "online"
       ],
-      "blurb": "Winamp 2 rebuilt for the browser: skins, equalizer, playlist and the Milkdrop visualizer, played by touch. Opens webamp.org in full-screen Firefox.",
+      "blurb": "Winamp 2 rebuilt for the browser: skins, equalizer, playlist and the Milkdrop visualizer, played by touch. Opens webamp.org full screen in Donkey.",
       "community": true,
       "kind": "app",
-      "depends": [],
+      "depends": [
+        "donkey"
+      ],
       "self_updates": false,
       "homepage": "https://webamp.org/",
       "platforms": {
@@ -884,9 +977,9 @@
     }
   ],
   "portmart": {
-    "version": "0.1.1",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.1/portmart-aarch64.tar.gz",
-    "sha256": "95191485950a75fa924f85a91b38919b931bbabfb758264325d8b5c0af16c27d",
-    "size": 13553153
+    "version": "0.1.2",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.2/portmart-aarch64.tar.gz",
+    "sha256": "5e3bafa9e5a5853e240f700451b0bdb3202742d7057309c675dea66ca22e92e1",
+    "size": 15763244
   }
 }
