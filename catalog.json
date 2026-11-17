@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-16T22:28:48Z",
+  "generated": "2026-11-17T04:05:20Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -624,9 +624,10 @@
           "source": {
             "type": "github-release",
             "repo": "mercurious/ug-rap-machine",
-            "asset": "rap-machine-aarch64.tar.gz"
+            "asset": "rap-machine-aarch64.tar.gz",
+            "prerelease": true
           },
-          "size_mb": 1.4,
+          "size_mb": 0.1,
           "home": "rap-machine",
           "launchers": [
             {
@@ -635,7 +636,6 @@
               "args": ""
             }
           ],
-          "hook": "install.sh",
           "keep": [
             "logs"
           ]
@@ -695,9 +695,10 @@
           "source": {
             "type": "github-release",
             "repo": "mercurious/ug-rap-machine",
-            "asset": "rap-machine-aarch64.tar.gz"
+            "asset": "rap-machine-aarch64.tar.gz",
+            "prerelease": true
           },
-          "size_mb": 1.4,
+          "size_mb": 0.1,
           "home": "rap-machine",
           "launchers": [
             {
@@ -709,7 +710,6 @@
               }
             }
           ],
-          "hook": "install.sh",
           "keep": [
             "logs"
           ]
