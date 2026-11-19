@@ -19,6 +19,7 @@ Env: GITHUB_TOKEN, PORTMART_GITHUB_API (default https://api.github.com),
 import argparse
 import datetime
 import fnmatch
+import html
 import json
 import os
 import re
@@ -152,7 +153,32 @@ def main():
     with open(os.path.join(a.out, "catalog.json"), "w", encoding="utf-8") as f:
         json.dump(doc, f, indent=1, ensure_ascii=False)
         f.write("\n")
+    with open(os.path.join(a.out, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_html(doc))
     print(f"resolved catalog written to {a.out} ({failed} transient failures)")
+
+
+def index_html(doc):
+    """The site root: what is published, so the Pages URL is not a bare 404."""
+    e = html.escape
+    pm = doc.get("portmart") or {}
+    rows = []
+    for app in doc["apps"]:
+        states = []
+        for pk, pv in sorted(app.get("platforms", {}).items()):
+            r = pv.get("resolved") or {}
+            src = (pv.get("source") or {}).get("type", "")
+            what = r.get("version") or r.get("reason") or src
+            states.append(f"{e(pk)}: {e(str(what))}")
+        rows.append(f"<tr><td>{e(app.get('name', app['id']))}</td><td>{e(app['id'])}</td>"
+                    f"<td>{'<br>'.join(states)}</td></tr>")
+    release = (f'<p>portmart {e(pm["version"])}: <a href="{e(pm["url"])}">{e(pm["url"].rsplit("/", 1)[-1])}</a></p>'
+               if pm.get("version") and pm.get("url") else "")
+    return ("<!doctype html>\n<meta charset=\"utf-8\">\n<title>portmart catalog</title>\n"
+            "<h1>portmart catalog</h1>\n"
+            f"<p><a href=\"catalog.json\">catalog.json</a>, generated {e(str(doc.get('generated', '?')))}, "
+            f"resolved {e(doc['resolved_at'])}</p>\n{release}\n"
+            "<table>\n<tr><th>App</th><th>id</th><th>Latest</th></tr>\n" + "\n".join(rows) + "\n</table>\n")
 
 
 if __name__ == "__main__":

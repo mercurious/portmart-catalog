@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-17T04:05:20Z",
+  "generated": "2026-11-19T07:53:59Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -22,7 +22,7 @@
           "source": {
             "type": "unpublished"
           },
-          "size_mb": 68.6,
+          "size_mb": 35.6,
           "home": "autobrawl",
           "launchers": [
             {
@@ -31,7 +31,9 @@
               "args": ""
             }
           ],
-          "hook": "install.sh",
+          "keep": [
+            "logs"
+          ],
           "resolved": {
             "status": "unavailable",
             "reason": "not publicly released"
@@ -600,6 +602,78 @@
         ]
       },
       "description": "An original NES game (MMC3, cc65), in the mould of NES Tennis: side-out scoring to 11, the two-bounce rule, the kitchen, underhand serves. The server calls the score; the umpire calls faults. Two players team up in doubles. It goes in the NES list, not Ports, and plays in RetroArch like any NES game; saves stay when you update or remove it."
+    },
+    {
+      "id": "quiote",
+      "name": "Quiote",
+      "short": "Quiote",
+      "monogram": "QT",
+      "author": "mercurious",
+      "category": "net",
+      "tags": [
+        "gpu",
+        "online"
+      ],
+      "blurb": "The Chrome web browser with WebGPU on your handheld's GPU (Turnip on the Adreno 650): full screen, pad-driven, and the runtime WebGPU apps here open in.",
+      "description": "Downloads Google's own Chrome for Linux arm64 at install and runs it unmodified, with WebGPU on Vulkan. Ports > Quiote opens a WebGPU check page. Home exits. Quiote is not affiliated with Google; Chrome is a trademark of Google LLC.",
+      "community": false,
+      "kind": "app",
+      "depends": [],
+      "self_updates": false,
+      "homepage": "https://github.com/mercurious/quiote",
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "github-release",
+            "repo": "mercurious/quiote",
+            "asset": "quiote-aarch64.tar.gz"
+          },
+          "size_mb": 0.1,
+          "extra_mb": 650,
+          "home": "quiote",
+          "strip_components": 1,
+          "version_file": "VERSION",
+          "launchers": [
+            {
+              "name": "Quiote",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "hook": "install.sh",
+          "keep": [
+            "chrome",
+            "logs"
+          ]
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": false,
+        "screens": [
+          {
+            "file": "shot-1.png",
+            "caption": "the WebGPU check page on Turnip, device capture, Retroid Pocket Flip 2",
+            "prototype": false
+          }
+        ],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png",
+          "shot-1.hero.dense.six",
+          "shot-1.hero.large.six",
+          "shot-1.png",
+          "shot-1.poster.dense.six",
+          "shot-1.poster.large.six",
+          "shot-1.shot.dense.six",
+          "shot-1.shot.large.six",
+          "shot-1.shotS.dense.six",
+          "shot-1.shotS.large.six"
+        ]
+      }
     },
     {
       "id": "rap-machine",
