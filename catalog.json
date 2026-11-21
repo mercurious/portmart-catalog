@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-21T01:52:50Z",
+  "generated": "2026-11-21T20:34:24Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -125,7 +125,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "Tetris, prototype capture",
+              "prototype": true
+            }
+          ]
+        }
       }
     },
     {
@@ -253,7 +262,21 @@
           "shot-2.shot.large.six",
           "shot-2.shotS.dense.six",
           "shot-2.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "the experiments, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            },
+            {
+              "file": "web/shot-2.webp",
+              "caption": "Rhythm, opened by touch, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -337,7 +360,21 @@
           "shot-2.shot.large.six",
           "shot-2.shotS.dense.six",
           "shot-2.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "browsing at handheld scale, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            },
+            {
+              "file": "web/shot-2.webp",
+              "caption": "the keyboard up for the address bar, ring on J, device capture",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -398,7 +435,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "pencil strokes drawn by touch, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -465,7 +511,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "Electribe EA-1 recreation",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -529,7 +584,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "first-run language picker, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       },
       "description": "On launch Grout adds or updates its own entry in the Ports gamelist.xml (it assumes it lives in roms/ports); portmart merges that entry with its own on install and removes both on remove. It updates itself."
     },
@@ -599,7 +663,21 @@
           "shot-2.shot.large.six",
           "shot-2.shotS.dense.six",
           "shot-2.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "exhibition doubles: the server calls 5-0-2",
+              "prototype": false
+            },
+            {
+              "file": "web/shot-2.webp",
+              "caption": "the box",
+              "prototype": false
+            }
+          ]
+        }
       },
       "description": "An original NES game (MMC3, cc65), in the mould of NES Tennis: side-out scoring to 11, the two-bounce rule, the kitchen, underhand serves. The server calls the score; the umpire calls faults. Two players team up in doubles. It goes in the NES list, not Ports, and plays in RetroArch like any NES game; saves stay when you update or remove it."
     },
@@ -726,7 +804,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "the WebGPU check page on Turnip, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -794,7 +881,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "headless browser render",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -927,7 +1023,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "pixel-art UI, prototype capture",
+              "prototype": true
+            }
+          ]
+        }
       }
     },
     {
@@ -989,7 +1094,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "start page, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -1063,7 +1177,21 @@
           "shot-2.shot.large.six",
           "shot-2.shotS.dense.six",
           "shot-2.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "cartridge browser with TIC-80's demo carts, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            },
+            {
+              "file": "web/shot-2.webp",
+              "caption": "cartridge browser on first start, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -1124,7 +1252,16 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "title screen, headless render",
+              "prototype": false
+            }
+          ]
+        }
       }
     },
     {
@@ -1184,14 +1321,23 @@
           "shot-1.shot.large.six",
           "shot-1.shotS.dense.six",
           "shot-1.shotS.large.six"
-        ]
+        ],
+        "web": {
+          "stills": [
+            {
+              "file": "web/shot-1.webp",
+              "caption": "playing the demo playlist with Milkdrop, device capture, Retroid Pocket Flip 2",
+              "prototype": false
+            }
+          ]
+        }
       }
     }
   ],
   "portmart": {
-    "version": "0.1.6",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.6/portmart-aarch64.tar.gz",
-    "sha256": "7924295886835ff2c9061b98a9fc68ba2c6d603107f450ee7646c3c3493c1171",
-    "size": 22955314
+    "version": "0.1.7",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.7/portmart-aarch64.tar.gz",
+    "sha256": "5dd5624f741ca814eaf45412ce40497211f6978a619cdc5eab610dc1f090a3e4",
+    "size": 22960391
   }
 }
