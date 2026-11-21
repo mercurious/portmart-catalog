@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-19T07:53:59Z",
+  "generated": "2026-11-21T01:52:50Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -604,6 +604,60 @@
       "description": "An original NES game (MMC3, cc65), in the mould of NES Tennis: side-out scoring to 11, the two-bounce rule, the kitchen, underhand serves. The server calls the score; the umpire calls faults. Two players team up in doubles. It goes in the NES list, not Ports, and plays in RetroArch like any NES game; saves stay when you update or remove it."
     },
     {
+      "id": "nitecruz",
+      "name": "nitecruz",
+      "short": "nitecruz",
+      "monogram": "NC",
+      "author": "mercurious",
+      "category": "play",
+      "tags": [
+        "gpu"
+      ],
+      "blurb": "A procedural night drive up Route 7, from Connecticut into Vermont's Green Mountains. WebGPU on the Adreno, in Quiote. Drive with the pad or let the autopilot.",
+      "description": "Everything is generated at startup: road, land, forest, car, deer and sound. Left stick steers, R2 and L2 are the pedals, L3 hands back the wheel. Home exits.",
+      "community": false,
+      "private": true,
+      "kind": "app",
+      "depends": [
+        "quiote"
+      ],
+      "self_updates": false,
+      "platforms": {
+        "rocknix-aarch64": {
+          "source": {
+            "type": "unpublished"
+          },
+          "size_mb": 0.2,
+          "home": "nitecruz",
+          "strip_components": 1,
+          "version_file": "VERSION",
+          "launchers": [
+            {
+              "name": "nitecruz",
+              "exec": "launch.sh",
+              "args": ""
+            }
+          ],
+          "resolved": {
+            "status": "unavailable",
+            "reason": "not publicly released"
+          }
+        }
+      },
+      "media": {
+        "icon": "icon.png",
+        "icon_generated": true,
+        "screens": [],
+        "files": [
+          "icon.iconM.dense.six",
+          "icon.iconM.large.six",
+          "icon.iconS.dense.six",
+          "icon.iconS.large.six",
+          "icon.png"
+        ]
+      }
+    },
+    {
       "id": "quiote",
       "name": "Quiote",
       "short": "Quiote",
@@ -1022,19 +1076,19 @@
         "gpu",
         "online"
       ],
-      "blurb": "Voxel touring-car racing, full screen in Donkey: five road cars, three real circuits. Served from GitHub Pages, with the pad mapped.",
+      "blurb": "Voxel touring-car racing, full screen in Donkey: five road cars, three real circuits. Served from voxel.racing, with the pad mapped.",
       "community": false,
       "kind": "app",
       "depends": [
         "donkey"
       ],
       "self_updates": false,
-      "homepage": "https://mercurious.github.io/voxel-gt-opus/",
+      "homepage": "https://voxel.racing/",
       "platforms": {
         "rocknix-aarch64": {
           "source": {
             "type": "web",
-            "url": "https://mercurious.github.io/voxel-gt-opus/",
+            "url": "https://voxel.racing/",
             "controller": "gamepad.yaml"
           },
           "size_mb": 0,
@@ -1135,9 +1189,9 @@
     }
   ],
   "portmart": {
-    "version": "0.1.5",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.5/portmart-aarch64.tar.gz",
-    "sha256": "b476f664661886cc644a9b7dd65332953294a6076b4a171e2accdb2f15a88085",
-    "size": 18412421
+    "version": "0.1.6",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.6/portmart-aarch64.tar.gz",
+    "sha256": "7924295886835ff2c9061b98a9fc68ba2c6d603107f450ee7646c3c3493c1171",
+    "size": 22955314
   }
 }
