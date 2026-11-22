@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-21T20:34:24Z",
+  "generated": "2026-11-22T23:23:47Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -1204,7 +1204,8 @@
         "gpu",
         "online"
       ],
-      "blurb": "Voxel touring-car racing, full screen in Donkey: five road cars, three real circuits. Served from voxel.racing, with the pad mapped.",
+      "blurb": "Voxel touring-car racing from voxel.racing, full screen in Donkey with the pad mapped; plays offline after the first launch. On the Flip 2 the stick rings show the driving line and revs.",
+      "description": "The game is the web app at voxel.racing: online it loads the latest version, offline it plays the copy from the last launch. Portmart installs the ROCKNIX parts: the launcher and a small local server (python3) that drives the Retroid Pocket Flip 2's stick rings. The left ring shows the colour of the driving line where you are, the right one is a rev counter with the limiter flash; outside a race they go back to the battery display. Devices without the rings just play. Home exits.",
       "community": false,
       "kind": "app",
       "depends": [
@@ -1215,15 +1216,24 @@
       "platforms": {
         "rocknix-aarch64": {
           "source": {
-            "type": "web",
-            "url": "https://voxel.racing/",
-            "controller": "gamepad.yaml"
+            "type": "pinned",
+            "version": "1.0.0",
+            "url": "https://voxel.racing/rocknix/voxel-gt-1.0.0-aarch64.tar.gz",
+            "sha256": "a67c90f16b97afcfae7d24ce442b438605bb3535dc2f22c9055103fd67cd921b"
           },
-          "size_mb": 0,
+          "size_mb": 0.01,
+          "home": "voxel-gt",
+          "strip_components": 1,
+          "version_file": "VERSION",
           "launchers": [
             {
-              "name": "Voxel GT"
+              "name": "Voxel GT",
+              "exec": "launch.sh",
+              "args": ""
             }
+          ],
+          "keep": [
+            "logs"
           ]
         }
       },
@@ -1335,9 +1345,9 @@
     }
   ],
   "portmart": {
-    "version": "0.1.7",
-    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.7/portmart-aarch64.tar.gz",
-    "sha256": "5dd5624f741ca814eaf45412ce40497211f6978a619cdc5eab610dc1f090a3e4",
-    "size": 22960391
+    "version": "0.1.8",
+    "url": "https://github.com/mercurious/portmart-catalog/releases/download/portmart-v0.1.8/portmart-aarch64.tar.gz",
+    "sha256": "48ad777db9bbf7457426aca0487a58479a2a307328a4989bd2a123987b5852fd",
+    "size": 22960306
   }
 }
