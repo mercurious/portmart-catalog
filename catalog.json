@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-22T23:50:46Z",
+  "generated": "2026-11-23T00:31:15Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -1204,12 +1204,12 @@
         "gpu",
         "online"
       ],
-      "blurb": "Voxel touring-car racing from voxel.racing, full screen in Donkey with the pad mapped; plays offline after the first launch. On the Flip 2 the stick rings show the driving line and revs.",
+      "blurb": "Voxel touring-car racing from voxel.racing, full screen in Quiote with the pad mapped; plays offline after the first launch. On the Flip 2 the stick rings show the driving line and revs.",
       "description": "The game is the web app at voxel.racing: online it loads the latest version, offline it plays the copy from the last launch. Portmart installs the ROCKNIX parts: the launcher and a small local server (python3) that drives the Retroid Pocket Flip 2's stick rings. The left ring shows the colour of the driving line where you are, the right one is a rev counter with the limiter flash; outside a race they go back to the battery display. Devices without the rings just play. Home exits.",
       "community": false,
       "kind": "app",
       "depends": [
-        "donkey"
+        "quiote"
       ],
       "self_updates": false,
       "homepage": "https://voxel.racing/",
@@ -1217,9 +1217,9 @@
         "rocknix-aarch64": {
           "source": {
             "type": "pinned",
-            "version": "1.0.0",
-            "url": "https://voxel.racing/rocknix/voxel-gt-1.0.0-aarch64.tar.gz",
-            "sha256": "a67c90f16b97afcfae7d24ce442b438605bb3535dc2f22c9055103fd67cd921b"
+            "version": "1.1.0",
+            "url": "https://voxel.racing/rocknix/voxel-gt-1.1.0-aarch64.tar.gz",
+            "sha256": "bd3bbf2f61386fd18e9db4eb83aa0230ea6d206eb3862a711cbef919ceb4d182"
           },
           "size_mb": 0.01,
           "home": "voxel-gt",
