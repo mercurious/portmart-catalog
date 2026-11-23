@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-23T00:31:15Z",
+  "generated": "2026-11-23T05:33:09Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -1217,9 +1217,9 @@
         "rocknix-aarch64": {
           "source": {
             "type": "pinned",
-            "version": "1.1.0",
-            "url": "https://voxel.racing/rocknix/voxel-gt-1.1.0-aarch64.tar.gz",
-            "sha256": "bd3bbf2f61386fd18e9db4eb83aa0230ea6d206eb3862a711cbef919ceb4d182"
+            "version": "1.2.0",
+            "url": "https://voxel.racing/rocknix/voxel-gt-1.2.0-aarch64.tar.gz",
+            "sha256": "8fa2626cf4a5cecd5ec58009f3efa830f0d325fa3a3e710e01ccaf85b5cc4279"
           },
           "size_mb": 0.01,
           "home": "voxel-gt",
