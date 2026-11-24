@@ -14,12 +14,12 @@ permissions:
 concurrency:
   group: pages
   cancel-in-progress: false
+# Upload and deploy run in separate jobs: deploy-pages lists the run's
+# artifacts, and right after an upload in the same job that list comes back
+# empty (actions/deploy-pages#451). A rerun can't recover it (two artifacts).
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - name: Resolve releases
@@ -31,5 +31,12 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v4
