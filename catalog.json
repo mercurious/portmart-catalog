@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-11-23T05:33:09Z",
+  "generated": "2026-11-24T02:56:04Z",
   "apps": [
     {
       "id": "autobrawl",
@@ -747,7 +747,7 @@
         "online"
       ],
       "blurb": "The Chrome web browser with WebGPU on your handheld's GPU (Turnip on the Adreno 650): full screen, pad-driven, and the runtime WebGPU apps here open in.",
-      "description": "Downloads Google's own Chrome for Linux arm64 at install and runs it unmodified, with WebGPU on Vulkan. Ports > Quiote opens a WebGPU check page. Home exits. Quiote is not affiliated with Google; Chrome is a trademark of Google LLC.",
+      "description": "Downloads Google's own Chrome for Linux arm64 at install and runs it unmodified, with WebGPU on Vulkan. Ports > Quiote opens a WebGPU check page: frame and GPU times, the pad as the page sees it, and a particle benchmark you steer with the pad. Home exits. Quiote is not affiliated with Google; Chrome is a trademark of Google LLC.",
       "community": false,
       "kind": "app",
       "depends": [],
